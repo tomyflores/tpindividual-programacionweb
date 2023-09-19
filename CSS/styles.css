@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+.PRINCIPAL-HEADER{
+    background-color: darkslateblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: black solid 3px;
+}
+
+h1{
+    color: white;
+    font-size: 1.5em;;
+}
+
+.DIV-LOGO{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.mainlogo{
+    width: 90px;
+}
+
+.HEROE{
+    background-image: url(../IMAGES/FONDO2.jpg);
+    max-width: 100vw;
+    height: 420px;
+    text-align: center;
+}
+
+
+/* .CATALOGO-BUTTON{
+    color: white;
+    font-size: 25px;
+    background-color: rgba(79, 54, 142, 0.336);
+    margin-top: 12%;
+} */
+
+/* .CATALOGO-BUTTON{
+  display: inline-block;
+    background-image: linear-gradient(to right,
+    rgb(81, 91, 224)
+    rgb(196,113,237)
+    rgb(246,79,89));
+    width: 300px;
+    background-color:rgba(79, 54, 142, 0.336);
+    margin: 5%;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.CATALOGO-BUTTON:hover{
+  animation: glow 7s linear infinite;
+  color: white;
+  background-color: rgba(52, 35, 103, 0.514); */
+/* } */
+
+/* @keyframes glow{
+  0%{box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);}
+  50%{box-shadow: 5px 5px 20px rgb(81, 91, 224),-5px -5px 20px rgb(81, 91, 224);}
+  100%{box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);}
+  } */
+
+.CATALOGO-BUTTON{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  margin-top: 140px;
+  background-color: #7a309cab;
+  }
+
+.CATALOGO-BUTTON:hover{
+  background: #963bc089;
+  box-shadow: 0 0 10px  #963bc089, 0 0 40px  #963bc089, 0 0 80px  #963bc089;
+  transition-delay: 1s;
+  color: #fff;
+}
+
+.CATALOGO-BUTTON span{
+  position: absolute;
+  display: block;
+}
+
+#span1{
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent, #c64bffed);
+}
+
+.CATALOGO-BUTTON:hover #span1{
+  left: 100%;
+  transition: 1s;
+}
+
+#span3{
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent, #c64bffed);
+}
+
+.CATALOGO-BUTTON:hover #span3{
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+#span2{
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent, #c64bffed);
+}
+
+.CATALOGO-BUTTON:hover #span2{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+} 
+
+#span4{
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#c64bffed);
+}
+
+.CATALOGO-BUTTON:hover #span4{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+} 
+
+.h2-heroe{
+    color: black;
+    align-self: center;
+    font-size: 30px;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.PARRAF-HEROE{
+    color: rgb(40, 38, 108);
+    font-size: 20px;
+
+}
+
+.heroe-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 153, 0);
+}
+
+.ALL-CARDS{
+background-color: rgb(100, 124, 184);
+padding: 3%;
+display: flex;
+flex-direction: row;
+max-width: 100%;
+justify-content: space-around;
+border-bottom: 3px black solid;
+}
+
+/* .ALL-PRODUCTS{
+    background-color: rgb(100, 124, 184);
+    padding-bottom: 2%;
+}
+
+.card{
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 5%;
+    text-align: center;
+    background-color:   rgba(79, 54, 142, 0.336) ;
+
+}
+
+.product-name, .price{
+  color: white;
+} */
+
+.ALL-SHOES{
+  background-color:  rgb(100, 124, 184);
+  padding: 20px 0;
+}
+
+.shoeinfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shoecard{
+  margin: 20px;
+  width: 500px;
+  height: 300px;
+  border-radius: 5px;
+  background: var(--i);
+  background-size: cover;
+  box-shadow: 3px 5px 5px rgba(3,32,51,.8);
+  overflow: hidden;
+}
+
+#shoecard1{
+  background-image: url(/IMAGES/SHOESXX/Nike-SB-Dunk-Low-J-Pack-Chicago-1\ XX.jpg);
+}
+
+#shoecard2{
+  background-image: url(/IMAGES/SHOESXX/Jordan-1-Mid-Barely-Orange-Light-Violet-Women_s\ XX.jpg);
+}
+
+#shoecard3{
+  background-image: url(/IMAGES/SHOESXX/Jordan-4-Retro-University-Blue\ XX.jpg);
+}
+
+#shoecard4{
+  background-image: url(/IMAGES/SHOESXX/Jordan-4-Retro-Seafoam-Women_s\ XX.jpg);
+}
+
+
+.shoecontent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0, .4);
+  opacity: 0;
+  transition: .5s;
+  color: #fff;
+}
+
+.shoecontent h2,a {
+  color: rgba(255,255,255, .8);
+  margin: 10px 0;
+}
+
+.shoecard:hover .shoecontent{
+  opacity: 1;
+}
+
+
+.CARD{
+  border: black solid 2px;
+  border-radius: 5%;
+  box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+  width: 400px;
+  text-align: center;
+  background-color:  rgba(79, 54, 142, 0.336);
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+.CARD:hover{
+  box-shadow:5px 5px 20px rgb(0,0,0,0.4);
+  transform: translateY(-3%);
+}
+
+.shoes-parraf{
+  padding-bottom: 1.2px;
+  font-size: 20px;
+}
+
+.link-card{
+  align-items: flex-end;
+  padding-top: 5%;
+  font-size: 20px;
+}
+
+.card-paragraph{
+  font-size: 18px;
+}
+
+.cards-div, .cards-div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shoeimg{
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+footer{
+    background-color: darkslateblue;
+    color: white;
+    padding: 1%;
+}
+
+.nav-main {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+  }
+  
+.nav-brand {
+  width: 50px;
+}
+  
+.nav-main ul {
+  display: flex;
+}
+  
+.nav-main ul li {
+  padding: 10px;
+}
+  
+.nav-main ul li a {
+  padding: 2px;
+}
+  
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+  
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav-menu{
+  font-size: 20px;
+}
+
+  

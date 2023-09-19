@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(61, 52, 118);
+    text-align: center;
+    color: white;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintxt{
+    text-transform: uppercase;
+    font-size: 65px;
+    cursor: default;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    background-image: linear-gradient(to left, rgb(130, 112, 248), rgb(100, 86, 191), rgb(71, 61, 139), rgb(51, 44, 100));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.maintxt:hover{
+    text-shadow:0 0 10px rgba(255, 0, 0, 0,5),
+                0 0 20px rgba(255, 0, 0, 0,5),
+                0 0 40px rgba(255, 0, 0, 0,5),
+                0 0 80px rgba(255, 0, 0, 0,5),
+                0 0 160px rgba(255, 0, 0, 0,5),
+                0 0 320px rgba(255, 0, 0, 0,5),
+}
+
+.map1{
+    background-color:  rgb(49, 42, 95);
+}
+
+.h2-map1{
+    background-color: rgb(49, 42, 95) ;
+}
+
+.STORES{
+    padding: 30px 0;
+}
+
+.map, .map1{
+    padding: 20px;
+}
+
+.footer{
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+    color:  rgb(255, 153, 0);
+    background-color: rgb(52, 44, 101);
+}

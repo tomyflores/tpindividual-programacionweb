@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-color: rgb(61, 52, 118);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.logo{
+    width: 190px;
+    height: 150px;
+}
+
+.container{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maintxt{
+    text-transform: uppercase;
+    font-size: 65px;
+    cursor: default;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    background-image: linear-gradient(to left, rgb(130, 112, 248), rgb(100, 86, 191), rgb(71, 61, 139), rgb(51, 44, 100));
+    background-size: 200%;
+    -webkit-background-clip: text;
+    animation: move 30s linear infinite;
+}
+
+@keyframes move{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+.maintxt:hover{
+    text-shadow:0 0 10px rgba(255, 0, 0, 0,5),
+                0 0 20px rgba(255, 0, 0, 0,5),
+                0 0 40px rgba(255, 0, 0, 0,5),
+                0 0 80px rgba(255, 0, 0, 0,5),
+                0 0 160px rgba(255, 0, 0, 0,5),
+                0 0 320px rgba(255, 0, 0, 0,5),
+}
+
+legend{
+    background-color: rgb(48, 41, 94);
+    padding: 5px;
+}
+
+.questions{
+    font-size: 18px;
+    color: rgb(198, 189, 255);
+}
+
+fieldset{
+    border-radius: 25px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 153, 0);
+    background-color: rgb(52, 44, 101);
+    text-decoration: none;
+}
+
+
+.meet-us-titles{
+    font-size: 20px
+}
+
+.meet-us-paragraphs{
+    font-size: 20px;
+}
